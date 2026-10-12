@@ -1,6 +1,10 @@
 {
   "basics": {
     "label": "Computer Science Student",
+    "image": "/photo.jpeg",
+    "email": "radicelorenzo@libero.it",
+    "phone": "+39 340 122 6028",
+    "url": "https://radicelorenzo.eu",
     "summary": "Currently I am a Computer Science Master Student at University of Trento specializing in Cybersecurity. Official team member of E-Agle Trento Racing Team where I work as Telemetry Technician.",
     "location": {
       "address": "",

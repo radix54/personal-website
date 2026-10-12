@@ -1,6 +1,10 @@
 {
   "basics": {
     "label": "Studente di Informatica",
+    "image": "/photo.jpeg",
+    "email": "radicelorenzo@libero.it",
+    "phone": "+39 340 122 6028",
+    "url": "https://radicelorenzo.eu",
     "summary": "Attualmente sono uno studente magistrale in Informatica presso l'Università di Trento, specializzando in Cybersecurity. Membro ufficiale del team E-Agle Trento Racing Team, dove lavoro come telemetrista.",
     "location": {
       "address": "",
