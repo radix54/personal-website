@@ -5,7 +5,7 @@
     "email": "radicelorenzo@libero.it",
     "phone": "+39 340 122 6028",
     "url": "https://radicelorenzo.eu",
-    "summary": "Attualmente sono uno studente magistrale in Informatica presso l'Università di Trento, specializzando in Cybersecurity. Membro ufficiale del team E-Agle Trento Racing Team, dove lavoro come telemetrista.",
+    "summary": "Attualmente sono uno studente magistrale in Informatica presso l'Università di Trento, specializzando in Cybersecurity. Membro ufficiale di E-Agle Trento Racing Team, dove lavoro come telemetrista.",
     "location": {
       "address": "",
       "postalCode": "22030",
@@ -28,9 +28,10 @@
       ],
       "achievements": [
         "I effettuato ricerche sull'ottimizzazione di una funzione che permette al sistema di telemetria di migliorare significativamente la deserializzazione dei messaggi ricevuti dalla macchina.",
+        "Ho configurato da zero il Raspberry Pi 5 su cui gira il sistema di telemetria, installando e configurando il sistema operativo e tutti i pacchetti software necessari.",
         "Ho creato un overlay SPI to CAN completamente funzionante su un Raspberry Pi 5 per permettere al sistema di telemetria di comunicare direttamente con il bus CAN della macchina.",
         "Ho effettuato ricerche su quale database utilizzare per il nostro sistema di telemetria leggendo documentazioni e effettuando simulazioni per trovare la soluzione migliore per le nostre esigenze.",
-        "Ho progettato e implementato il sistema che permette al sistema di telemetria di comunicare con il database dei segnali dei sensori."
+        "Ho progettato e implementato il sistema che permette al sistema di telemetria di comunicare con il database dei segnali dei sensori. Salva i dati in tempo reale e permette di recuperare gli ultimi in caso di incidente."
       ],
       "skills": [
         "Python",

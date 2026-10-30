@@ -155,14 +155,6 @@
       ]
     },
     {
-      "name": "SIEM",
-      "keywords": [
-        "Security Information and Event Management",
-        "Log Analysis",
-        "Threat Detection"
-      ]
-    },
-    {
       "name": "Wireshark",
       "keywords": [
         "Network Protocol Analyzer",
