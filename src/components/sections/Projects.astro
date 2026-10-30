@@ -42,11 +42,13 @@ const { projects = [] } = getCV(lang);
 						</div>
 
 						<p class="py-3 text-sm text-skin-base">{description}</p>
-						<ul class="mt-1 text-sm text-skin-muted">
-							{highlights.map((highlight) => {
-								return <li>{highlight}</li>;
-							})}
-						</ul>
+						{highlights?.length > 0 && (
+							<ul class="mt-1 text-sm text-skin-muted">
+								{highlights.map((highlight) => {
+									return <li>{highlight}</li>;
+								})}
+							</ul>
+						)}
 					</div>
 				);
 			})

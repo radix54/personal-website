@@ -208,56 +208,56 @@
     {
       "name": "Personal Website",
       "isActive": true,
-      "description": "My personal website",
+      "description": "Il mio sito personale",
       "url": "https://www.lorenzoradice.eu",
       "github": "https://github.com/radix54/personal-website"
     },
     {
       "name": "Ed-DSA",
       "isActive": true,
-      "description": "EdDSA algorithm Go implementation",
+      "description": "Implementazione in Go di EdDSA",
       "url": "https://github.com/radix54/ed-dsa",
       "github": "https://github.com/radix54/ed-dsa"
     },
     {
       "name": "RC4",
       "isActive": true,
-      "description": "Rivest Cipher 4 Go implementation",
+      "description": "Implementazione in Go di Rivest Cipher 4",
       "url": "https://github.com/radix54/rc4",
       "github": "https://github.com/radix54/rc4"
     },
     {
       "name": "SHA3",
       "isActive": true,
-      "description": "SHA-3 Go Implementation",
+      "description": "Implementazione in Go di SHA-3",
       "url": "https://github.com/radix54/sha3",
       "github": "https://github.com/radix54/sha3"
     },
     {
       "name": "Healthcheck My Server",
       "isActive": true,
-      "description": "Healthcheck service to monitor the server uptime. It notifies when the server is unreachable and when it starts up.",
+      "description": "Servizio di healthcheck per monitorare l'uptime del server. Notifica quando il server non è raggiungibile e quando si avvia.",
       "url": "https://github.com/radix54/healthcheck-my-server",
       "github": "https://github.com/radix54/healthcheck-my-server"
     },
     {
       "name": "Distributed Systems Project",
       "isActive": false,
-      "description": "Distributed System project for the University of Trento course.",
+      "description": "Progetto di Sistemi Distribuiti per il corso dell'Università di Trento.",
       "url": "https://github.com/radix54/distributed-systems-project",
       "github": "https://github.com/radix54/distributed-systems-project"
     },
     {
       "name": "CPU_Stress",
       "isActive": true,
-      "description": "A program to stress a CPU as much as possible",
+      "description": "Un programma per stressare al massimo una CPU",
       "url": "https://github.com/radix54/cpu-stress",
       "github": "https://github.com/radix54/cpu-stress"
     },
     {
       "name": "GPU_Stress",
       "isActive": false,
-      "description": "A program to stress NVIDIA GPU as much as possible",
+      "description": "Un programma per stressare al massimo una GPU NVIDIA",
       "url": "https://github.com/radix54/gpu-stress",
       "github": "https://github.com/radix54/gpu-stress"
     }
