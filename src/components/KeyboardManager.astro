@@ -9,6 +9,7 @@ const lang = getLang(Astro.currentLocale);
 const t = useTranslations(lang);
 const { basics } = getCV(lang);
 const { profiles } = basics;
+const cvDownloadUrl = `https://github.com/radix54/cv/releases/latest/download/cv_${lang}.pdf`;
 
 const SOCIAL_ICONS: SocialIcon = {
 	GitHub: `<svg
@@ -80,6 +81,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 	data-placeholder={t("footer.searchPlaceholder")}
 	data-info={JSON.stringify(profilesInfo)}
 	data-print-label={t("footer.printResume")}
+	data-cv-url={cvDownloadUrl}
 	data-actions-label={t("footer.actions")}
 ></div>
 
@@ -103,7 +105,8 @@ const profilesInfo = profiles.map(({ network, url }) => {
 		const hotkeypad = new HotKeyPad();
 		const info = hotkeypad.instance.getAttribute("data-info") ?? "[]";
 		const parsedInfo = JSON.parse(info) as Info[];
-		const printLabel = hotkeypad.instance.getAttribute("data-print-label") ?? "Print Resume";
+		const printLabel = hotkeypad.instance.getAttribute("data-print-label") ?? "CV";
+		const cvUrl = hotkeypad.instance.getAttribute("data-cv-url");
 		const actionsLabel = hotkeypad.instance.getAttribute("data-actions-label") ?? "Actions";
 
 		const data = parsedInfo.map(({ url, hotkey, icon, id, section, title }) => {
@@ -128,7 +131,9 @@ const profilesInfo = profiles.map(({ network, url }) => {
 				hotkey: "ctrl+P",
 				section: actionsLabel,
 				handler: () => {
-					window.print();
+					if (cvUrl) {
+						window.open(cvUrl, "_blank");
+					}
 				},
 			},
 			...data,

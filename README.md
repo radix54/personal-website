@@ -207,18 +207,12 @@ Theme variables and dark-mode variants are defined in
 control switches between system, light, and dark modes and stores the
 preference in `localStorage`.
 
-## Printing the CV
+## Downloading the CV
 
-Run the development server or preview a production build, then use the
-browser's print dialog:
-
-1. Open `/en/` or `/it/`.
-2. Press `Ctrl+P`/`Cmd+P`.
-3. Choose “Save to PDF” or a physical printer.
-
-Print-specific layout rules are defined in the page components and global
-styles. Controls and decorative elements marked as non-printable are hidden
-automatically.
+Open `/en/` or `/it/` and press `Ctrl+K`/`Cmd+K` to open the command palette.
+Select **Download CV** (also available with `Ctrl+P`) to download the
+language-specific PDF from the latest
+[CV release](https://github.com/radix54/cv/releases/latest).
 
 ## Building and deploying
 

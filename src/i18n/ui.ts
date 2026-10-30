@@ -84,7 +84,7 @@ export const ui: Record<Lang, UIDict> = {
 
 		"footer.pressPrefix": "Press",
 		"footer.pressSuffix": "to open the command palette.",
-		"footer.printResume": "Print Resume",
+		"footer.printResume": "Download CV",
 		"footer.searchPlaceholder": "Search Command",
 		"footer.visitNetwork": "Visit {network}",
 		"footer.social": "Social",
@@ -124,7 +124,7 @@ export const ui: Record<Lang, UIDict> = {
 
 		"footer.pressPrefix": "Premi",
 		"footer.pressSuffix": "per aprire la palette dei comandi.",
-		"footer.printResume": "Stampa CV",
+		"footer.printResume": "Download CV",
 		"footer.searchPlaceholder": "Cerca comando",
 		"footer.visitNetwork": "Visita {network}",
 		"footer.social": "Social",
