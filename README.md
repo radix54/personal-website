@@ -41,7 +41,7 @@ manager. The scripts also work with npm.
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/ozneroL541/personal-website.git
+git clone https://github.com/radix54/personal-website.git
 cd personal-website
 pnpm install
 ```

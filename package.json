@@ -7,13 +7,13 @@
     "portfolio",
     "cv"
   ],
-  "homepage": "https://github.com/ozneroL541/personal-website#readme",
+  "homepage": "https://github.com/radix54/personal-website#readme",
   "bugs": {
-    "url": "https://github.com/ozneroL541/personal-website/issues"
+    "url": "https://github.com/radix54/personal-website/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ozneroL541/personal-website.git"
+    "url": "git+https://github.com/radix54/personal-website.git"
   },
   "license": "MIT",
   "author": "Lorenzo Radice",
