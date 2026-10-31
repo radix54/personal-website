@@ -206,60 +206,102 @@
   ],
   "projects": [
     {
-      "name": "Personal Website",
+      "name": "Influx Logger",
       "isActive": true,
-      "description": "Il mio sito personale",
-      "url": "https://www.lorenzoradice.eu",
-      "github": "https://github.com/radix54/personal-website"
+      "description": "Influx Logger è un middleware tra Telemetry e Influx il cui scopo principale è scrivere i dati sul database",
+      "url": "https://github.com/eagletrt/influx-logger",
+      "github": "https://github.com/eagletrt/influx-logger",
+      "highlights": [
+        "Python",
+        "Ricerca",
+        "Sviluppo",
+        "Multi-thread Programming",
+        "InfluxDB"
+      ]
     },
     {
       "name": "Ed-DSA",
       "isActive": true,
       "description": "Implementazione in Go di EdDSA",
       "url": "https://github.com/radix54/ed-dsa",
-      "github": "https://github.com/radix54/ed-dsa"
+      "github": "https://github.com/radix54/ed-dsa",
+      "highlights": [
+        "Go",
+        "Crittografia",
+        "KAT"
+      ]
     },
     {
       "name": "RC4",
       "isActive": true,
       "description": "Implementazione in Go di Rivest Cipher 4",
       "url": "https://github.com/radix54/rc4",
-      "github": "https://github.com/radix54/rc4"
+      "github": "https://github.com/radix54/rc4",
+        "highlights": [
+          "Go",
+          "Crittografia",
+          "KAT"
+      ]
     },
     {
       "name": "SHA3",
       "isActive": true,
       "description": "Implementazione in Go di SHA-3",
       "url": "https://github.com/radix54/sha3",
-      "github": "https://github.com/radix54/sha3"
+      "github": "https://github.com/radix54/sha3",
+      "highlights": [
+        "Go",
+        "Crittografia",
+        "KAT"
+      ]
     },
     {
       "name": "Healthcheck My Server",
       "isActive": true,
       "description": "Servizio di healthcheck per monitorare l'uptime del server. Notifica quando il server non è raggiungibile e quando si avvia.",
       "url": "https://github.com/radix54/healthcheck-my-server",
-      "github": "https://github.com/radix54/healthcheck-my-server"
+      "github": "https://github.com/radix54/healthcheck-my-server",
+      "highlights": [
+        "Python",
+        "Infrastruttura dei Server",
+        "Healthcheck.io"
+      ]
     },
     {
       "name": "Distributed Systems Project",
-      "isActive": false,
+      "isActive": true,
       "description": "Progetto di Sistemi Distribuiti per il corso dell'Università di Trento.",
       "url": "https://github.com/radix54/distributed-systems-project",
-      "github": "https://github.com/radix54/distributed-systems-project"
+      "github": "https://github.com/radix54/distributed-systems-project",
+      "highlights": [
+        "Java",
+        "Elezione distribuita del leader",
+        "Consenso distribuito",
+        "Scritture distribuite"
+      ]
     },
     {
       "name": "CPU_Stress",
       "isActive": true,
       "description": "Un programma per stressare al massimo una CPU",
       "url": "https://github.com/radix54/cpu-stress",
-      "github": "https://github.com/radix54/cpu-stress"
+      "github": "https://github.com/radix54/cpu-stress",
+      "highlights": [
+        "C",
+        "CPU Stress Test"
+      ]
     },
     {
       "name": "GPU_Stress",
-      "isActive": false,
+      "isActive": true,
       "description": "Un programma per stressare al massimo una GPU NVIDIA",
       "url": "https://github.com/radix54/gpu-stress",
-      "github": "https://github.com/radix54/gpu-stress"
+      "github": "https://github.com/radix54/gpu-stress",
+      "highlights": [
+        "C",
+        "CUDA",
+        "GPU Stress Test"
+      ]
     }
   ]
 }
