@@ -5,14 +5,19 @@ import { getLang, languages, locales, useTranslations } from "@/i18n/utils";
 const lang = getLang(Astro.currentLocale);
 const t = useTranslations(lang);
 
-// Astro.url already points at the current page; getRelativeLocaleUrl swaps
-// only the locale prefix, so this keeps working if more pages are added later.
-const path = Astro.url.pathname;
+// Remove the configured repository base before swapping locale prefixes.
+// Astro.url.pathname includes the base path in production builds.
+const base = import.meta.env.BASE_URL;
+const pathWithoutBase =
+	base !== "/" && Astro.url.pathname.startsWith(base)
+		? `/${Astro.url.pathname.slice(base.length)}`
+		: Astro.url.pathname;
 const localePrefix = new RegExp(`^/(${locales.join("|")})(/|$)`);
+const path = pathWithoutBase.replace(localePrefix, "/");
 const options = Object.entries(languages).map(([code, label]) => ({
 	code,
 	label,
-	url: getRelativeLocaleUrl(code, path.replace(localePrefix, "/")),
+	url: getRelativeLocaleUrl(code, path),
 }));
 ---
 

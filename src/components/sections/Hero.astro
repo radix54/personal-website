@@ -7,7 +7,7 @@ import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 import type { SocialIcon } from "@/types";
-import { getCV, getLang, useTranslations } from "@/i18n/utils";
+import { getAssetUrl, getCV, getLang, useTranslations } from "@/i18n/utils";
 
 const lang = getLang(Astro.currentLocale);
 const t = useTranslations(lang);
@@ -89,7 +89,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 			</footer>
 		</div>
 		<figure class="print:hidden w-fit relative">
-			<img class="shadow-lg shadow-skin-hues" src={image} alt={name} />
+			<img class="shadow-lg shadow-skin-hues" src={getAssetUrl(image)} alt={name} />
 			<div class="pointer-events-none absolute -inset-2">
 				<div class="absolute -inset-y-8 right-0 w-px bg-skin-hue/50 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
 				<div class="absolute -inset-y-8 left-0 w-px bg-skin-hue/50 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>

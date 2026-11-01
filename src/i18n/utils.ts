@@ -4,6 +4,16 @@ import { ui, type UIKey } from "./ui";
 export { getLang, isLang, languages, locales, defaultLang, type Lang } from "./config";
 export { getCV } from "./cv";
 
+/** Resolve a public asset against Astro's configured site base path. */
+export function getAssetUrl(path: string): string {
+	if (/^(?:[a-z]+:)?\/\//i.test(path) || path.startsWith("data:")) {
+		return path;
+	}
+
+	const base = import.meta.env.BASE_URL;
+	return `${base}${path.replace(/^\/+/, "")}`;
+}
+
 /**
  * Build a `t(key, vars?)` translator bound to a language.
  *
