@@ -1,5 +1,4 @@
 ---
-import { getRelativeLocaleUrl } from "astro:i18n";
 import { getLang, languages, locales, useTranslations } from "@/i18n/utils";
 
 const lang = getLang(Astro.currentLocale);
@@ -7,17 +6,16 @@ const t = useTranslations(lang);
 
 // Remove the configured repository base before swapping locale prefixes.
 // Astro.url.pathname includes the base path in production builds.
-const base = import.meta.env.BASE_URL;
-const pathWithoutBase =
-	base !== "/" && Astro.url.pathname.startsWith(base)
-		? `/${Astro.url.pathname.slice(base.length)}`
-		: Astro.url.pathname;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const pathWithoutBase = Astro.url.pathname.startsWith(base)
+	? `/${Astro.url.pathname.slice(base.length)}`
+	: Astro.url.pathname;
 const localePrefix = new RegExp(`^/(${locales.join("|")})(/|$)`);
-const path = pathWithoutBase.replace(localePrefix, "/");
+const path = pathWithoutBase.replace(localePrefix, "").replace(/^\/?/, "/");
 const options = Object.entries(languages).map(([code, label]) => ({
 	code,
 	label,
-	url: getRelativeLocaleUrl(code, path),
+	url: `${base}${code}${path === "/" ? "/" : path}`,
 }));
 ---
 

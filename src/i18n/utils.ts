@@ -10,7 +10,7 @@ export function getAssetUrl(path: string): string {
 		return path;
 	}
 
-	const base = import.meta.env.BASE_URL;
+	const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
 	return `${base}${path.replace(/^\/+/, "")}`;
 }
 
